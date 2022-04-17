@@ -21,8 +21,8 @@ git merge 分支名         #合并分支
 
 #先在GitHub上面创建远程库
 git remote -v     #查看别名
-git remote add git-demo(最好是创建的远程库名） https://github.com/chenzixinCSDN/git-deom.git（远程库连接   #https的）      #创建别名
-git push git-demo( #往哪个库推送）master（把本地的master库推送到远程库）
+git remote add git-demo(最好是创建的远程库名，别名） https://github.com/chenzixinCSDN/git-deom.git（远程库连接   #https的）      #创建别名
+git push git-demo( 别名或链接）master（把本地的master库推送到远程库）
 
 #在远程库有代码改变，可将其拉取下来。保证本地库和远程库的代码一致
 git pull git-demo （#从哪个库拉取） master（拉取哪个改变的分支）
@@ -34,7 +34,15 @@ git clone https://github.com/chenzixinCSDN/git-deom.git(库连接）
 
 #别人克隆的要pull上去，需要在自己远程库中的Settings/Manage/Invite a collaborator 添加别人账号，添加到本地库。之后复制邀请函（链接）发送给别人，别人可以在github中复制链接同意邀请。
 
-
+#ssh登录
+#在自己电脑用户中右键进入Git Bash Here，输入命令生成.ssh文件
+ssh-keygen -t（#指定用那种加密算法） rsa(#非对称协议） -C czx@czx.com(最初创建的邮箱    #当前免密登录协议是对这个邮箱的）
+#然后在新增的.ssh文件中有    id_rsa(私钥）   和    id_rsa.pub(公钥）
+#可在Git Bash Here 中查看,查看id_rsa.pub公钥复制下来
+cat id_rsa.pub
+#在自己账号上的settings中SSH and GPG key 添加
+#使用ssh登录
+git pull/push git@github.com:chenzixinCSDN/git-deom.git（ssh链接） master(分支）
 
 
 
