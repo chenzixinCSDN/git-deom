@@ -11,4 +11,50 @@ git commit -m "上传名字" 文件名      #提交到本地库
 git reflog    #可以查看所有分支 的 所有操作记录（包括已经被删除 的 commit 记录 和 reset 的 操作）
 git log    #显示所有提交过的版本信息
 git reset --hard 版本号      #HEAD改变指向版本号的文件 
-                               	
+git branch 分支名   #创建分支
+git branch -v   #查看分支
+git checkout 分支名     #切换分支
+git merge 分支名         #合并分支
+
+#在master中想合并但是冲突时，会有提示（master|MASTER），在这时使用命令git commit -m "上传名字" 后面不加文件名
+
+
+#先在GitHub上面创建远程库
+git remote -v     #查看别名
+git remote add git-demo(最好是创建的远程库名） https://github.com/chenzixinCSDN/git-deom.git（远程库连接   #https的）      #创建别名
+git puch git-demo( #往哪个库推送）master（把本地的master库推送到远程库）
+
+#在远程库有代码改变，可将其拉取下来。保证本地库和远程库的代码一致
+git pull git-demo （#从哪个库拉取） master（拉取哪个改变的分支）
+
+#克隆，可以不需要登录，同一台电脑需要先在凭证依据里面删除github上的号
+#别名会改变
+#1拉取代码、2初始化本地库、3创建别名
+git clone https://github.com/chenzixinCSDN/git-deom.git(库连接）
+
+#别人克隆的要pull上去，需要在自己远程库中的Settings/Manage/Invite a collaborator 添加别人账号，添加到本地库。之后复制邀请函（链接）发送给别人，别人可以在github中复制链接同意邀请。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
