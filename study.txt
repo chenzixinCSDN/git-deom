@@ -1,0 +1,14 @@
+使用git
+简单命令
+git config --global user.name "xxx"        		               # 配置用户名
+git config --global user.email "xxx@xxx.com"        	               # 配置邮件
+git init         # 初始化本地git仓库（创建新仓库）
+vim            #编辑创建    如 vim czx.txt
+ll或者ls或者cat czx.txt                     #查询
+git status   #查看状态
+git add       #上传到暂存区
+git commit -m "上传名字" 文件名      #提交到本地库
+git reflog    #可以查看所有分支 的 所有操作记录（包括已经被删除 的 commit 记录 和 reset 的 操作）
+git log    #显示所有提交过的版本信息
+git reset --hard 版本号      #HEAD改变指向版本号的文件 
+                               	
