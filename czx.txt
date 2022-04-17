@@ -6,5 +6,9 @@ czxczxczczxczc
 czxczxczczxczc
 czxczxczczxczc
 czxczx
+<<<<<<< HEAD
 
 master
+=======
+hot-fix
+>>>>>>> hot-fix
