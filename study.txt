@@ -22,7 +22,7 @@ git merge 分支名         #合并分支
 #先在GitHub上面创建远程库
 git remote -v     #查看别名
 git remote add git-demo(最好是创建的远程库名） https://github.com/chenzixinCSDN/git-deom.git（远程库连接   #https的）      #创建别名
-git puch git-demo( #往哪个库推送）master（把本地的master库推送到远程库）
+git push git-demo( #往哪个库推送）master（把本地的master库推送到远程库）
 
 #在远程库有代码改变，可将其拉取下来。保证本地库和远程库的代码一致
 git pull git-demo （#从哪个库拉取） master（拉取哪个改变的分支）
